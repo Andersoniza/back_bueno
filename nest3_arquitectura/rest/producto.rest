@@ -1,0 +1,28 @@
+###listar productos
+GET http://127.0.0.1:3000/producto
+
+### Guardar producto
+
+POST http://127.0.0.1:3000/producto
+Content-Type: application/json
+
+{
+    "nombre":"Teclado",
+    "precio": 70,
+    "cantidad": 5,
+    "imagen":"imagen.jpg"
+}
+###mostar producto
+GET http://127.0.0.1:3000/producto/90
+
+###modificar producto
+PUT http://127.0.0.1:3000/producto/mouse
+Content-Type: application/json
+
+{
+    "nombre":"monitor",
+    "precio": 30
+}
+
+###eliminar producto
+DELETE  http://127.0.0.1:3000/producto/mouse

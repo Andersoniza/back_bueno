@@ -1,0 +1,45 @@
+<h1 class="hola">Hola desde Angular</h1>
+<h1 class="titulo">{{titulo}}</h1>
+<p class="materia">{{materia|json}}</p>
+<style>
+    .titulo{
+        text-align: center;
+        background-color: rgb(25, 170, 127);
+        
+    }
+    .hola{
+        text-align: center;
+        background-color: rgb(96, 192, 160);
+    }
+    .materia{
+        text-align: justify;
+    }
+    
+</style>
+<table border="1">
+    <thead>
+      <tr>
+        <th>NOMBRE</th>
+        <th>PRECIO</th>
+        <th>STOCK</th>
+        <th>IMAGEN</th>
+        <th>ACCION</th>
+      </tr>
+    </thead>
+   <tbody>
+    <tr *ngFor="let prod of productos">
+      <td>{{prod.nombre}}</td>
+      <td>{{prod.precio}}</td>
+      <td>{{prod.stock}}</td>
+      <td>
+        <img src="img/R.jpg" alt="" width="100px">
+      </td>
+      <td>
+        <button>X</button>
+      </td>
+    </tr>
+    
+   </tbody>
+  
+  </table>
+  
