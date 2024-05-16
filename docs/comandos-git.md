@@ -11,3 +11,4 @@ git remote and origin
 ````
 https://github.com/Andersoniza/back_proyecto.git
 ````
+# validar referencias
